@@ -1,6 +1,6 @@
 #! /usr/bin/env python3
 
-depths = [ int(d) for d in open('input') ]
+depths = [ int(d) for d in open('inputs/day1.txt') ]
 
 print(sum( [ d1 < d2 for d1,d2 in zip(depths, depths[1:]) ]))
 
